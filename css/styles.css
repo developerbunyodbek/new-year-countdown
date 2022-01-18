@@ -1,0 +1,71 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  overflow: hidden;
+  font-weight: bold;
+  height: 100vh;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.countdown-box {
+  text-align: center;
+}
+
+.countdown-box:not(:last-child) {
+  margin-right: 60px;
+}
+
+.countdown-title {
+  margin: 0;
+}
+
+.countdown-value {
+  margin: 0;
+}
+
+.countdown-value-name {
+  font-weight: 300;
+}
+
+.fa-snowflake {
+  color: #fff;
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
